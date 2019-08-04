@@ -22,7 +22,8 @@ h1{
     padding: 20px 0;
 }
 .box{
-    padding: 100px 0;
+    padding: 15px;
+    min-height:400px;
 }
 
 /* Navbar */
@@ -41,3 +42,29 @@ nav.navbar{
     margin:15px 0;
 }
 
+.main_img1{
+    background-image: url(../img/iplace_thumb.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.iplace_logo{
+}
+
+
+/* Footer Section */
+.copyright{
+    color:white;
+    text-align: right;
+    padding-top:5px;
+  }
+  .social-media{
+    font-size:20px;
+  }
+  
+  .social-icons{
+      color:white;
+  }
+  .social-icons:hover{
+    color:#00a8ff;
+  }
