@@ -10,29 +10,39 @@ body{
     margin: 0 auto;
 }
 
+/* Hero Section */
 .home_hero h1{
     font-size: 60px;
     font-weight: 300;
-}
-
-/* Template */
-.box, .home_hero, .footer{
-    background-color: antiquewhite;
-    border: solid 1px pink;
-    min-height: 50px;
+    color: #1c2a43;
 }
 
 .home_hero{
-    padding-top:60px;
-    min-height: 600px;
+    padding:60px 0px;
+    min-height: 500px;
+    background-color: #ffffff;
 }
+
+.hero_img{
+    width:80%;
+    margin-left:10%;
+}
+
+/* Template */
+.box{
+    background-color: antiquewhite;
+    border: solid 1px pink;
+    
+}
+
+
 
 .footer{
     padding: 20px 0;
 }
 .box{
     padding: 15px;
-    min-height:400px;
+    min-height:600px;
 }
 
 /* Navbar */
@@ -49,10 +59,17 @@ body{
     border:none;
 }
 
+.my_active{
+    border-bottom: 1px solid pink;
+}
+
 /* Projects Section */
 
 .my_button{
-    margin:15px 0;
+    margin:80px 0;
+    border-radius: 0;
+    background-color: #2d3436;
+    padding:15px 30px;
 }
 
 .main_img1{
@@ -61,11 +78,35 @@ body{
     background-size: cover;
 }
 
-.iplace_logo{
+.main_img2{
+    background-image: url(../img/todoapp-thumb.jpg);
+    background-position:0% 4%;
+    background-size: cover;
+}
+
+.main_img3{
+    background-image: url(../img/auweb-thumb.jpg);
+    background-position:0% 4%;
+    background-size: cover;
+}
+
+.main_img4{
+    background-image: url(../img/jockman-thumb.jpg);
+    background-position:50% 0%;
+    background-size:cover;
+    background-repeat: no-repeat
+}
+
+.thumb_lg{
+    padding:50px;
+    height: 500px;
 }
 
 
 /* Footer Section */
+footer{
+    background-color:#1c2a43;
+}
 .copyright{
     color:white;
     text-align: right;
@@ -79,5 +120,5 @@ body{
       color:white;
   }
   .social-icons:hover{
-    color:#00a8ff;
+    color: #1e90ff;
   }
