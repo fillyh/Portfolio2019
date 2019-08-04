@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:300,400,700&display=swap');
+
+p, h1, h2, h3, h4,h5, h6{
+    font-family: 'Khula', sans-serif;
+}
+
+
+
+body{
+    margin: 0 auto;
+}
+
+.home_hero h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+/* Template */
+.box, .home_hero, .footer{
+    background-color: antiquewhite;
+    border: solid 1px pink;
+    min-height: 50px;
+}
+
+.home_hero{
+    padding-top:60px;
+    min-height: 600px;
+}
+
+.footer{
+    padding: 20px 0;
+}
+.box{
+    padding: 15px;
+    min-height:400px;
+}
+
+/* Navbar */
+
+/* nav.navbar{
+    position: absolute;
+    top:100;
+    right:0;
+    left:0;
+    z-index:20;
+} */
+.navbar-default{
+    background-color: transparent;
+    border:none;
+}
+
+/* Projects Section */
+
+.my_button{
+    margin:15px 0;
+}
+
+.main_img1{
+    background-image: url(../img/iplace_thumb.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.iplace_logo{
+}
+
+
+/* Footer Section */
+.copyright{
+    color:white;
+    text-align: right;
+    padding-top:5px;
+  }
+  .social-media{
+    font-size:20px;
+  }
+  
+  .social-icons{
+      color:white;
+  }
+  .social-icons:hover{
+    color:#00a8ff;
+  }
