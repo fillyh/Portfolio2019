@@ -8,22 +8,23 @@ p, h1, h2, h3, h4,h5, h6{
 
 body{
     margin: 0 auto;
-    background-color: #f5f6fa;
 }
 
 /* Navbar */
 
-/* nav.navbar{
-    position: absolute;
-    top:100;
-    right:0;
-    left:0;
-    z-index:20;
-} */
+
+nav.navbar{
+    background-color: #f5f6fa;
+    border:transparent;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom:15px;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
- border-bottom: 3px solid pink;
+ border-bottom: 3px solid #fbc531;
  background-color:transparent;
  color:#1c2a43;
+ padding-bottom:5px;
  
 }
 
@@ -33,7 +34,9 @@ body{
 
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus{
-    border-bottom: 3px solid pink;
+    border-bottom: 3px solid #fbc531;
+    padding-bottom:5px;
+    font-size:20px;
 }
 
 
@@ -65,6 +68,19 @@ body{
     width:60%;
     margin-bottom:60px;
 }
+
+.img_hover a{
+    text-decoration: none;
+    color:#fff;
+    
+}
+
+.img_hover a:hover{
+    text-shadow: 2px 2px black;
+    color:#fbc531;
+    
+}
+
 
 /* Template */
 .box{
@@ -99,6 +115,11 @@ body{
     padding:15px 30px;
 }
 
+.my_button:hover{
+    background-color:#fbc531;
+    border: #fbc531;
+}
+
 .main_img1{
     background-image: url(../img/iplace_thumb.jpg);
     background-position:center;
@@ -127,7 +148,7 @@ body{
 .thumb_lg{
     position:relative;
     padding:50px;
-    height: 500px;
+    height: 400px;
 }
 
 .thumb_lg:hover .img_hover {
@@ -205,3 +226,20 @@ footer{
         padding-top:0;
     }
   }
+
+
+ @media only screen and (max-width: 500px){
+     .home_hero{
+         height:100vh;
+     }
+    /* .hero_img{
+    display:none;
+} */
+
+    .home_hero h1{
+        font-size:45px;
+    }
+    .home_hero h3{
+        font-size:25px;
+    }
+}

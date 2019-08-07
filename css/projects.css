@@ -1,3 +1,89 @@
+
+
 .projects_sect{
-    margin-top:80px;
+    margin-top:30px;
+    margin-bottom:40px;
+    background-color:white;
 }
+/* Tabs Section */
+
+
+
+/* Tabs Nav */
+.tabs_container{
+    margin-bottom:30px;
+}
+
+.tabs_container a{
+    display: inline-block;
+}
+/* Work Thumbnails */
+
+.work_thumb{
+    height:400px;
+}
+
+
+.work_img1{
+    background-image:url(../img/jockman-thumb.jpg);
+    background-position:center;
+    background-size: cover;
+
+}
+
+.work_img2{
+    background-image:url(../img/todoapp-thumb.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.work_img3{
+    background-image:url(../img/auweb-thumb.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.work_img4{
+    background-image:url(../img/ventmate-thumb.jpg);
+    background-position:50% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color:#409ffd;
+}
+
+.work_img5{
+    background-image:url(../img/tutor-thumb.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.work_img6{
+    background-image:url(../img/cosmo-thumb.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Graphic Design Section */
+
+.gd_thumb{
+    width:100%;
+    margin:15px 0px;
+    border:1px solid rgb(236, 236, 236);
+}
+
+
+  /* Media Query */
+  @media only screen and (max-width: 769px) {
+    .tabs_container a{
+        float:left;
+        padding:0px 5px;
+    }
+
+    .gd_thumb{
+        margin: 0px 0px 15px 0px;
+    }
+
+
+   }
