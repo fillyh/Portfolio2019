@@ -10,49 +10,114 @@ body{
     margin: 0 auto;
 }
 
-.home_hero h1{
+/* Navbar */
+
+
+nav.navbar{
+    background-color: #f5f6fa;
+    border:transparent;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom:15px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+ border-bottom: 3px solid #fbc531;
+ background-color:transparent;
+ color:#1c2a43;
+ padding-bottom:5px;
+ 
+}
+
+.navbar-default .navbar-nav > li > a{
+    color:#1c2a43;
+}
+
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus{
+    border-bottom: 3px solid #fbc531;
+    padding-bottom:5px;
+    font-size:20px;
+}
+
+
+
+
+/* Hero Section */
+
+.intro h1{
+
+    font-size: 80px;
+    font-weight: 700;
+    color: #1c2a43;
+    padding-top:10px;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+
+.intro h3{
     font-size: 60px;
     font-weight: 300;
+    color: #1c2a43;
+    margin:10px 0px 20px 0px;
 }
+.home_hero{
+    background-color: #f5f6fa;
+}
+
+.hero_img{
+    width:60%;
+    margin-bottom:60px;
+}
+
+.img_hover a{
+    text-decoration: none;
+    color:#fff;
+    
+}
+
+.img_hover a:hover{
+    text-shadow: 2px 2px black;
+    color:#fbc531;
+    
+}
+
 
 /* Template */
-.box, .home_hero, .footer{
+.box{
     background-color: antiquewhite;
     border: solid 1px pink;
-    min-height: 50px;
+    
 }
 
-.home_hero{
-    padding-top:60px;
-    min-height: 600px;
-}
+
 
 .footer{
     padding: 20px 0;
 }
 .box{
     padding: 15px;
-    min-height:400px;
+    min-height:600px;
 }
 
-/* Navbar */
 
-/* nav.navbar{
-    position: absolute;
-    top:100;
-    right:0;
-    left:0;
-    z-index:20;
-} */
-.navbar-default{
-    background-color: transparent;
-    border:none;
+
+/* Work Samples Section */
+
+.work_section{
+    padding-top:8.4%;
+    background-color:#fff;
 }
-
-/* Projects Section */
 
 .my_button{
-    margin:15px 0;
+    margin:80px 0;
+    border-radius: 0;
+    background-color: #2d3436;
+    padding:15px 30px;
+}
+
+.my_button:hover{
+    background-color:#fbc531;
+    border: #fbc531;
 }
 
 .main_img1{
@@ -61,11 +126,81 @@ body{
     background-size: cover;
 }
 
-.iplace_logo{
+.main_img2{
+    background-image: url(../img/todoapp-thumb.jpg);
+    background-position:0% 4%;
+    background-size: cover;
 }
 
+.main_img3{
+    background-image: url(../img/auweb-thumb.jpg);
+    background-position:0% 4%;
+    background-size: cover;
+}
+
+.main_img4{
+    background-image: url(../img/jockman-thumb.jpg);
+    background-position:50% 0%;
+    background-size:cover;
+    background-repeat: no-repeat
+}
+
+.thumb_lg{
+    position:relative;
+    padding:50px;
+    height: 400px;
+}
+
+.thumb_lg:hover .img_hover {
+    opacity:1;
+  }
+
+  .img1{
+    position: absolute;
+    top:28%;
+    left:15%;
+    right:0;
+    width:70%;
+  }
+
+.img_hover{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition:.8s ease;
+    background-color:#1c2a43;
+}
+
+.thumb_title{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumb_title h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+.thumb_title p{
+    font-size: 20px;
+    font-weight: 300;
+}
 
 /* Footer Section */
+footer{
+    background-color:#1c2a43;
+}
 .copyright{
     color:white;
     text-align: right;
@@ -79,5 +214,32 @@ body{
       color:white;
   }
   .social-icons:hover{
-    color:#00a8ff;
+    color: #1e90ff;
   }
+
+  /* Media Query */
+  @media only screen and (max-width: 1200px) {
+   .intro {
+      text-align: center;
+    }
+    .work_section{
+        padding-top:0;
+    }
+  }
+
+
+ @media only screen and (max-width: 500px){
+     .home_hero{
+         height:100vh;
+     }
+    /* .hero_img{
+    display:none;
+} */
+
+    .home_hero h1{
+        font-size:45px;
+    }
+    .home_hero h3{
+        font-size:25px;
+    }
+}
