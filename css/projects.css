@@ -1,8 +1,8 @@
 
 
 .projects_sect{
-    margin-top:30px;
-    margin-bottom:40px;
+    margin-top:50px;
+    margin-bottom:50px;
     background-color:white;
 }
 /* Tabs Section */
@@ -85,5 +85,9 @@
         margin: 0px 0px 15px 0px;
     }
 
+    .projects_sect{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
 
    }

@@ -200,6 +200,7 @@ nav.navbar{
 /* Footer Section */
 footer{
     background-color:#1c2a43;
+    padding:20px 0px;
 }
 .copyright{
     color:white;
@@ -218,7 +219,7 @@ footer{
   }
 
   /* Media Query */
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 990px) {
    .intro {
       text-align: center;
     }
@@ -232,6 +233,7 @@ footer{
      .home_hero{
          height:100vh;
      }
+
     /* .hero_img{
     display:none;
 } */
