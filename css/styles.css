@@ -81,6 +81,10 @@ nav.navbar{
     
 }
 
+.small_screen{
+    display: none;
+}
+
 
 /* Template */
 .box{
@@ -219,6 +223,15 @@ footer{
   }
 
   /* Media Query */
+  @media only screen and (max-width: 1300px) {
+    .desktop_screen{
+        display: none;
+    }
+    .small_screen{
+        display:block;
+    }
+   }
+
   @media only screen and (max-width: 990px) {
    .intro {
       text-align: center;
@@ -228,15 +241,12 @@ footer{
     }
   }
 
+  
 
  @media only screen and (max-width: 500px){
      .home_hero{
          height:100vh;
      }
-
-    /* .hero_img{
-    display:none;
-} */
 
     .home_hero h1{
         font-size:45px;
